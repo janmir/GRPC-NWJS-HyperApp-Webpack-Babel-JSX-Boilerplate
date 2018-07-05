@@ -1,0 +1,10 @@
+syntax = "proto3";
+package main;
+service RPC{
+    rpc Connect(stream Package) returns (stream Package){}
+}
+
+message Package{
+    string realm = 1;
+    string data = 2;
+}

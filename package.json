@@ -1,0 +1,36 @@
+{
+  "name": "webpack-nwjs",
+  "version": "1.0.0",
+  "description": "GRPC-NWJS-Webpack-BabelJSX-HyperApp-Boilerplate",
+  "main": "index.html",
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack",
+    "pack": "webpack -p",
+    "run": "nwbuild -r ./",
+    "nwbuild":"nwbuild -p linux64 ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github"
+  },
+  "keywords": [
+    "w-nwjs"
+  ],
+  "author": "janmir",
+  "license": "MIT",
+  "dependencies": {
+    "google-protobuf": "^3.6.0",
+    "grpc": "^1.13.0",
+    "hyperapp": "^1.2.6"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "nw-builder": "^3.5.4",
+    "webpack": "^4.15.0",
+    "webpack-cli": "^3.0.8"
+  }
+}
